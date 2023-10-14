@@ -1,1 +1,29 @@
-<p>login works!</p>
+<!-- <p>login works!</p> -->
+<section class="login-container">
+    <article>
+        <img src="../../../assets/bqazul.png" alt="fondo">
+        <h1>Welcome</h1>
+        <h3>Please, enter with your
+        <br> own credentials</h3>
+            <form [formGroup]="formulario" (ngSubmit)="enviarFormulario()">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" formControlName="nombre">
+                <div *ngIf="formulario.get('nombre').hasError('required')">
+                  El nombre es obligatorio.
+                </div>
+              
+                <label for="email">Email:</label>
+                <input type="email" id="email" formControlName="email">
+                <div *ngIf="formulario.get('email').hasError('required')">
+                  El email es obligatorio.
+                </div>
+                <div *ngIf="formulario.get('email').hasError('email')">
+                  El email no es válido.
+                </div>
+              
+                <!-- Agrega más campos aquí -->
+              
+                <button type="submit">Enviar</button>
+              </form>
+    </article>
+</section>
