@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './components/login/login.component';
+import { LoginViewComponent } from './views/login-view/login-view.component';
 
 const routes: Routes = [
   // { 
@@ -9,7 +9,7 @@ const routes: Routes = [
   //   pathMatch: 'full' 
   // },
   { 
-    path: 'Login', component: LoginComponent 
+    path: 'Login', component: LoginViewComponent
   },
   { 
       path: '', redirectTo: '/Login', pathMatch: 'full' 
