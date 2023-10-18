@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-view',
@@ -6,5 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login-view.component.scss']
 })
 export class LoginViewComponent {
+  constructor(private router: Router) {}
+
+  goToMenu() {
+    // Navegar a la vista del menú cuando sea apropiado, por ejemplo, después de un inicio de sesión exitoso.
+    this.router.navigate(['/Menu']);
+  }
 
 }
