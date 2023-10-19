@@ -10,7 +10,6 @@ export class LoginViewComponent {
   constructor(private router: Router) {}
 
   goToMenu() {
-    // Navegar a la vista del menú cuando sea apropiado, por ejemplo, después de un inicio de sesión exitoso.
     this.router.navigate(['/Menu']);
   }
 

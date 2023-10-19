@@ -1,6 +1,7 @@
 import { LoginService } from './../../services/login.service';
 import { LoginAuth } from 'src/app/interfaces/login-auth';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -12,18 +13,20 @@ export class LoginComponent {
     email: '',
     password: ''
   };
-  constructor (private loginService: LoginService) {}
+  constructor (private loginService: LoginService, private router: Router) {}
 
   login() {
-    const email = this.user.email; // Definir email
-    const password = this.user.password; // Definir password
-
+    const email = this.user.email; 
+    const password = this.user.password; 
+    console.log('se hizo click');
     this.loginService.login(email, password).subscribe(
       (response: LoginAuth) => {
-        // Puedes acceder a propiedades específicas de la respuesta de manera segura.
+        console.log('Respuesta de inicio de sesión:', response)
         const accessToken = response.accessToken;
-        const userEmail = response.user.email;
-        // ...
+        // const userEmail = response.user.email;
+         localStorage.setItem('accessToken', accessToken);
+
+         this.router.navigate(['/Menu']);
       },
       (error) => {
         console.error('Error de inicio de sesión', error);

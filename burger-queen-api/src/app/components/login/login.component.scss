@@ -24,3 +24,17 @@
 .logo {
     width: 70%;
 }
+
+.form-group {
+    background-color: red;
+
+
+    .email{
+        width: 40%;
+        height: 20%;
+        flex-shrink: 0;
+    }
+    .password{
+
+    }
+}
