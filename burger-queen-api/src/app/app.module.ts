@@ -9,6 +9,9 @@ import { LoginViewComponent } from './views/login-view/login-view.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MenuViewComponent } from './views/menu-view/menu-view.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { OrderViewComponent } from './views/order-view/order-view.component';
+import { OrderComponent } from './components/order/order.component';
+
 
 
 @NgModule({
@@ -17,7 +20,9 @@ import { MenuComponent } from './components/menu/menu.component';
     LoginComponent,
     LoginViewComponent,
     MenuViewComponent,
-    MenuComponent
+    MenuComponent,
+    OrderViewComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
