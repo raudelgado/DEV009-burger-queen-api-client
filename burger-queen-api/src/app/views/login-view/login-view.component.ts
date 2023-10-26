@@ -10,7 +10,7 @@ export class LoginViewComponent {
   constructor(private router: Router) {}
 
   goToMenu() {
-    this.router.navigate(['/Menu']);
+    this.router.navigate(['/New Order']);
   }
 
 }

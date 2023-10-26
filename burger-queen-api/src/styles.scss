@@ -1,14 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+	font-family: 'AntipastoPro_trial';
+	src: url('assets/fonts/AntipastoPro_trial.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'AntipastoPro-Extralight_trial';
+	src: url('assets/fonts/AntipastoPro-Extralight_trial.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'AntipastoPro-DemiBold_trial';
+	src: url('assets/fonts/AntipastoPro-DemiBold_trial.ttf') format('truetype');
+}
 
 
 html, body {
 	margin: 0;
 	padding: 0;
-}
-html, body {
 	height: 100%;
-}
-body {
-	margin: 0;
-	font-family: Nunito Sans, "Helvetica Neue", sans-serif;
+	font-family: Nunito Sans, sans-serif;
 }
