@@ -11,6 +11,7 @@ import { MenuViewComponent } from './views/menu-view/menu-view.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { OrderViewComponent } from './views/order-view/order-view.component';
 import { OrderComponent } from './components/order/order.component';
+import { OrderModalComponent } from './components/order-modal/order-modal.component';
 
 
 
@@ -22,7 +23,8 @@ import { OrderComponent } from './components/order/order.component';
     MenuViewComponent,
     MenuComponent,
     OrderViewComponent,
-    OrderComponent
+    OrderComponent,
+    OrderModalComponent
   ],
   imports: [
     BrowserModule,

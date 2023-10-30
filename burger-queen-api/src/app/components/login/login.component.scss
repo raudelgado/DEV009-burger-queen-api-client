@@ -1,45 +1,65 @@
+// Definición de variables:
+$color-primario: #132644;
+$color-secundario: #E0FE68;
+$fuente-principal: 'Nunito Sans', sans-serif;
+$fuente-secundaria:'AntipastoPro_trial', sans-serif;
+
+
 .login-container {
-        background-color: #132644;
-        border-radius: 30px;
-        padding: 2rem;
-        text-align: center; 
-        color:  white;      
-
-            h1{
-                font-size: 4vh;
-                font-family: Nunito Sans;
-                font-size: 48px;
-                font-style: normal;
-
-                h3{
-                    font-size: 1vh;
-                    font-weight: 300;
-                    font-family: Nunito Sans;
-                    font-size: 32px;
-                    font-style: normal;
-                }
-            }
-}
-.logo {
-    width: 70%;
-}
-
-.form-group {
-    background-color: red;  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-
-    .email{
-        width: 40%;
-        height: 20%;
-        flex-shrink: 0;
+    background-color: $color-primario;
+    border-radius: 30px;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    font-family: $fuente-principal;
+    h1 {
+      font-size: 4vh;
     }
-    .password{
-        width: 40%;
-        height: 20%;
-        flex-shrink: 0;
+  
+    h3 {
+      font-size: 1vh;
+      font-weight: 300;
     }
-}
+    .logo {
+        width: 70%;
+      }
+      
+      .form-group {
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box; /* Aplicar box-sizing a .form-group */
+      
+        .email{
+          background-color: #fff;
+          border-width: 1px;
+          border-style: solid;
+          border-color: #D2DAF0;
+          border-radius: 2px;
+          color: #565678;
+          max-width: 100%;
+          width: 100%;
+          flex-shrink: 0;
+          border: none;
+        }
+      }
+      .form-group {
+        .password {
+            background-color: #fff;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #D2DAF0;
+            border-radius: 2px;
+            color: #565678;
+            max-width: 100%;
+            width: 100%;
+            flex-shrink: 0;
+            border: none;
+        }
+      }
+  }
+  
+
+  
