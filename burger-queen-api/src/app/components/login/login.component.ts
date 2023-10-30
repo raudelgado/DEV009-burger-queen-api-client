@@ -43,7 +43,7 @@ export class LoginComponent {
           this.errorMessage = 'Correo electrónico o contraseña incorrectos.';
         } else {
 
-          //TODOs Cambiar a ingles 
+          //TODOs Cambiar a ingles ..
           this.errorMessage = 'Error en el inicio de sesión. Credenciales Incorrectas. Por favor, inténtalo de nuevo.';
         }
       }
