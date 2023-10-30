@@ -1,1 +1,33 @@
-<p>login works!</p>
+<section class="login-container">
+    <article>
+      <img class="logo" src="../../../assets/bqblanco.png" alt="logo">
+      <h1>Welcome</h1>
+      <h3>Please, enter with your<br>own credentials</h3>
+  
+      <form #loginForm="ngForm" (ngSubmit)="login()">
+        <div class="form-group">
+          <input type="email" class="email" name="email" [(ngModel)]="user.email" required placeholder="Email">
+          <div *ngIf="loginForm.controls['email'].invalid && loginForm.controls['email'].touched" class="error-message">
+            Email is required
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <input type="password" class="password" name="password" [(ngModel)]="user.password" required placeholder="Password">
+          <div *ngIf="loginForm.controls['password']?.invalid && loginForm.controls['password']?.touched" class="error-message">
+            Password is required
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <button type="submit" [disabled]="loginForm.invalid">Login</button>
+        </div>
+  
+        <!-- Mostrar mensaje de error si existe -->
+        <div *ngIf="errorMessage" class="error-message">
+          {{ errorMessage }}
+        </div>
+      </form>
+    </article>
+  </section>
+  

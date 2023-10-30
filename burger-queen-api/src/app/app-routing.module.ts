@@ -1,17 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './components/login/login.component';
+import { LoginViewComponent } from './views/login-view/login-view.component';
+import { MenuViewComponent } from './views/menu-view/menu-view.component';
+import { OrderViewComponent } from './views/order-view/order-view.component';
 
 const routes: Routes = [
   { 
-    path: '', 
-    redirectTo: '/inicio', 
-    pathMatch: 'full' 
+    path: 'Login', component: LoginViewComponent
+  },
+  {
+    path: 'New Order', component: OrderViewComponent
+  },
+  {
+    path: 'Menu', component: MenuViewComponent
   },
   { 
-    path: 'Login', 
-    component: LoginComponent 
-  },
+      path: '', redirectTo: '/Login', pathMatch: 'full' 
+    },
 ];
 
 @NgModule({

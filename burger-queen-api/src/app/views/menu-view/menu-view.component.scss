@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "AntipastoPro_trial.ttf";
+    src: url("../../../assets/fonts/AntipastoPro_trial.ttf") format("truetype");
+}
+@font-face {
+    font-family: "AntipastoPro-DemiBold_trial.ttf";
+    src: url("../../../assets/fonts/AntipastoPro-DemiBold_trial.ttf") format("truetype");
+}
+@font-face {
+    font-family: "AntipastoPro-Extralight_trial.ttf";
+    src: url("../../../assets/fonts/AntipastoPro-Extralight_trial.ttf") format("truetype");
+}
+
+body {
+    background-color: #ede6dc;
+    padding: 2%;
+}
+
+.header {
+    background: #132644;
+    border-radius: 40px;
+    width: 1295px;
+    height: 96px;
+    display: flex;
+
+    .logo {
+        width: auto;
+        padding: 1%;
+        margin-right: 25%;
+        margin-left: 2%;
+        flex-shrink: 1;
+    }
+    h1 {
+        color: white;
+        text-align: center;
+        font-family: "AntipastoPro_trial.ttf", sans-serif;
+        font-size: 48px;
+        text-transform: capitalize;
+        font-weight: 400;
+    }
+}
+
+.buttonsOption {
+    background: red;
+    width: 25%;
+    height: 17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "AntipastoPro_trial.ttf";
+    font-size: 18px;
+    font-weight: 300;
+
+    .buttonBreakfast {
+        color: white;
+        background: #132644;
+        width: 270px;
+        height: 64px;
+        margin-left: 3%;
+        flex-shrink: 0;
+    }
+
+    .buttonLate {
+        color: white;
+        background: #132644;
+        width: 270px;
+        height: 64px;
+        padding: 3%;
+        flex-shrink: 0;
+    }
+}

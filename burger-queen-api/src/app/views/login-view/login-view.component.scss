@@ -1,0 +1,18 @@
+.fondo {
+    margin: 0;
+    padding: 0;
+    width: 133vh;
+}
+section {
+    display: flex;
+    flex-direction: column; /* Esto coloca los elementos uno encima del otro */
+    align-items: center; /* Esto centra los elementos horizontalmente */
+    justify-content: center; /* Esto centra los elementos verticalmente */
+    height: 100vh; /* Ajusta la altura al 100% del viewport para centrar verticalmente */
+  }
+.login-container {
+    position: absolute;
+    top: 50%; /* Coloca el cuadro azul en el centro vertical */
+    left: 50%; /* Coloca el cuadro azul en el centro horizontal */
+    transform: translate(-50%, -50%); 
+}

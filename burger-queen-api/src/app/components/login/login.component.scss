@@ -1,0 +1,45 @@
+.login-container {
+        background-color: #132644;
+        border-radius: 30px;
+        padding: 2rem;
+        text-align: center; 
+        color:  white;      
+
+            h1{
+                font-size: 4vh;
+                font-family: Nunito Sans;
+                font-size: 48px;
+                font-style: normal;
+
+                h3{
+                    font-size: 1vh;
+                    font-weight: 300;
+                    font-family: Nunito Sans;
+                    font-size: 32px;
+                    font-style: normal;
+                }
+            }
+}
+.logo {
+    width: 70%;
+}
+
+.form-group {
+    background-color: red;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    .email{
+        width: 40%;
+        height: 20%;
+        flex-shrink: 0;
+    }
+    .password{
+        width: 40%;
+        height: 20%;
+        flex-shrink: 0;
+    }
+}
