@@ -42,6 +42,8 @@ export class LoginComponent {
         if (error.status === 401) {
           this.errorMessage = 'Correo electrónico o contraseña incorrectos.';
         } else {
+
+          //TODOs Cambiar a ingles 
           this.errorMessage = 'Error en el inicio de sesión. Credenciales Incorrectas. Por favor, inténtalo de nuevo.';
         }
       }
