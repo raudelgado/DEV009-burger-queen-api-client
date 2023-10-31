@@ -5,7 +5,10 @@
     </div>
 </header>
 <section class="btn-order">
-    <button class="btn-new" (click)="openModal()">New Order</button>
+    <button (click)="openModal()">New Order</button>
+    <p>Nombre del cliente: {{ clientName }}</p>
+    
+    
     <button class="btn-hist">Order History</button>
   </section>
   

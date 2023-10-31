@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,7 +12,7 @@ import { MenuViewComponent } from './views/menu-view/menu-view.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { OrderViewComponent } from './views/order-view/order-view.component';
 import { OrderComponent } from './components/order/order.component';
-import { OrderModalComponent } from './components/order-modal/order-modal.component';
+
 
 
 
@@ -24,7 +25,6 @@ import { OrderModalComponent } from './components/order-modal/order-modal.compon
     MenuComponent,
     OrderViewComponent,
     OrderComponent,
-    OrderModalComponent
   ],
   imports: [
     BrowserModule,

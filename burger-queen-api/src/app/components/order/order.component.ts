@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ModalService } from './../../services/modal.service';
+
 
 @Component({
   selector: 'app-order',
@@ -7,14 +7,21 @@ import { ModalService } from './../../services/modal.service';
   styleUrls: ['./order.component.scss']
 })
 export class OrderComponent {
-  constructor(private modalService: ModalService) {}
+  isModalOpen: boolean = false;
+  clientName: string = '';
 
   openModal() {
-    this.modalService.openModal();
+    this.isModalOpen = true;
   }
 
   closeModal() {
-    this.modalService.closeModal();
+    this.isModalOpen = false;
+  }
+
+  saveClientName() {
+    // Aquí puedes guardar el nombre del cliente en una variable o realizar otras acciones necesarias
+    console.log('Nombre del cliente:', this.clientName);
+    this.closeModal();
   }
 }
 
