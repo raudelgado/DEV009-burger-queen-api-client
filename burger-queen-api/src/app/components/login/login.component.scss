@@ -4,7 +4,11 @@ $color-secundario: #E0FE68;
 $fuente-principal: 'Nunito Sans', sans-serif;
 $fuente-secundaria: 'AntipastoPro_trial', sans-serif;
 
-
+* {
+  margin: 0;
+  padding: 0;
+}
+  //TODOs Cambiar la caja azul a un poco más grande y leer más sobre los media + sccs
 .login-container {
   background-color: $color-primario;
   border-radius: 30px;
@@ -13,18 +17,24 @@ $fuente-secundaria: 'AntipastoPro_trial', sans-serif;
   color: white;
   font-family: $fuente-principal;
 
-  h1 {
-    font-size: 4vh;
+  .header-container {
+
+
+    h1 {
+      font-size: 3.5vh;
+      font-weight: 400;
+    }
+
+    h3 {
+      font-size: 1.8vh;
+      font-weight: 400;
+    }
+
+    .logo {
+      width: 70%;
+    }
   }
 
-  h3 {
-    font-size: 1vh;
-    font-weight: 300;
-  }
-
-  .logo {
-    width: 70%;
-  }
 
   .form-group {
     // background-color: red;
@@ -41,22 +51,37 @@ $fuente-secundaria: 'AntipastoPro_trial', sans-serif;
       height: 3.8vh;
       font-family: $fuente-principal;
       font-size: 16px;
-      background-color: transparent; /* Fondo transparente */
-      border-top: none; /* Sin borde superior */
-      border-left: transparent; /* Borde izquierdo transparente */
-      border-right: transparent; /* Borde derecho transparente */
+      background-color: transparent;
+      /* Fondo transparente */
+      border-top: none;
+      /* Sin borde superior */
+      border-left: transparent;
+      /* Borde izquierdo transparente */
+      border-right: transparent;
+      /* Borde derecho transparente */
       border-bottom: 3px solid white;
       padding: 10px;
       border-radius: 2px;
       color: $color-secundario;
       max-width: 100%;
       flex-shrink: 0;
+
+      .email:focus,
+      .password:focus { /*Con esto evito que vuelva a los ajustes de fabrica*/
+        background-color: transparent;
+        /* Establece el fondo transparente en estado enfocado */
+        color: $color-secundario;
+        /* Establece el color del texto en estado enfocado */
+        border-color: $color-secundario;
+        /* Establece el color del borde en estado enfocado */
+      }
     }
-    
-    
+
+
 
     .login {
       padding: 8px 20px;
+      width: 55%;
       font-family: $fuente-principal;
       font-size: 18px;
       font-style: normal;
@@ -64,6 +89,7 @@ $fuente-secundaria: 'AntipastoPro_trial', sans-serif;
       color: white;
       border-radius: 10px;
       overflow: hidden;
+      margin: 1vh;
       border-color: $color-secundario;
 
       &::before {

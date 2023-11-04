@@ -1,14 +1,10 @@
-<header>
-    <div class="barra"> 
-        <img src="../../../assets/bqblancologo.png" alt="logo">
-        <h1> Welcome back, waiter! </h1>
-    </div>
-</header>
+
 <section class="btn-order">
     <button (click)="openModal()">New Order</button>
-    <p>Nombre del cliente: {{ clientName }}</p>
-    
-    
+    <p>Nombre del cliente: </p>
+    <div class="" *ngIf="modalSwitch == true"> 
+    <app-order-modal></app-order-modal>
+    </div>
     <button class="btn-hist">Order History</button>
   </section>
   

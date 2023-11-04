@@ -4,43 +4,14 @@ $color-secundario: #E0FE68;
 $color-fondo: #EDE6DC;
 $fuente-principal: 'Nunito Sans', sans-serif;
 $fuente-secundaria:'AntipastoPro_trial', sans-serif;
+
 // Estilos generales (si los necesitas)
 * {
     margin: 0;
     padding: 0;
 }
 
-// Estilos para el encabezado
-header {
-    width: 90%;
-    height: 96px;
-    background-color: $color-primario;
-    display: flex;
-    justify-content: center;
 
-    // Estilos para la clase .barra dentro del encabezado
-    .barra {
-        border-radius: 40px;
-        color: white;
-
-        // Estilos para imágenes dentro de la clase .barra
-        img {
-        width: 5%;
-        justify-items: start;
-        flex-shrink: 1;
-        }
-
-        // Estilos para el elemento h1 dentro de la clase .barra
-        h1 {
-        text-align: center;
-        align-items: center ;
-        font-family: 'AntipastoPro_trial', sans-serif;
-        font-size: 48px;
-        text-transform: capitalize;
-        font-weight: 400;
-        }
-    }
-}
 .btn-order{
     display: flex;
     flex-direction: column;
