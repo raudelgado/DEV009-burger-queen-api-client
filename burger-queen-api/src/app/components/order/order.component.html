@@ -1,10 +1,14 @@
 
-<section class="btn-order">
-    <button (click)="openModal()">New Order</button>
-    <p>Nombre del cliente: </p>
-    <div class="" *ngIf="modalSwitch == true"> 
-    <app-order-modal></app-order-modal>
+<main>
+  <div class="button-container">
+    <div class="new-order">
+      <button (click)="openModal()">New Order</button>
+      <div class="" *ngIf="modalSwitch == true"> 
+        <app-order-modal></app-order-modal>
+      </div>
     </div>
-    <button class="btn-hist">Order History</button>
-  </section>
-  
+    <div class="order-historial">
+      <button class="btn-hist">See the historial</button>
+    </div>
+  </div>
+  </main>

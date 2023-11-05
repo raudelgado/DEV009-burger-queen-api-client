@@ -4,18 +4,53 @@ $color-secundario: #E0FE68;
 $color-fondo: #EDE6DC;
 $fuente-principal: 'Nunito Sans', sans-serif;
 $fuente-secundaria:'AntipastoPro_trial', sans-serif;
+$fuente-button:'AntipastoPro-Extralight_trial', sans-serif;
 
 // Estilos generales (si los necesitas)
 * {
     margin: 0;
     padding: 0;
+    
 }
 
-
-.btn-order{
+body {
+    height: 100vh;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+  }
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    box-sizing: border-box;
+
+
+    .button-container {
+        padding: 20%;
+        display: flex;
+        flex-direction: column; /* Puedes usar "row" para alinear los botones horizontalmente */
+        justify-content: space-between; /* Ajusta el espacio entre los botones */
+        align-items: center; /* Alinea verticalmente los botones al centro */
+      }
+      
+  }
+  
+  button {
+    width: 17vw;
+    height: 5vh;
+    border-radius: 15px;
+    background: $color-primario;
+    color: white;
+    font-family: $fuente-button;
+    font-style: normal;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 20px; 
+  }
+  
+
 

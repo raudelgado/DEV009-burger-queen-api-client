@@ -11,6 +11,7 @@ export class OrderComponent implements OnInit {
   constructor(private modalSS:SwitchService) {
 
   }
+  
   ngOnInit(){
     this.modalSS.$modal.subscribe((valor)=>{this.modalSwitch = valor})
 
