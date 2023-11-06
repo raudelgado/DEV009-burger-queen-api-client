@@ -1,0 +1,80 @@
+// Definición de variables:
+$color-primario: #132644;
+$color-secundario: #E0FE68;
+$color-fondo: #EDE6DC;
+$fuente-principal: 'Nunito Sans', sans-serif;
+$fuente-secundaria: 'AntipastoPro_trial', sans-serif;
+$fuente-button: 'AntipastoPro-DemiBold_trial', sans-serif;
+
+/* Estilos para el modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(19, 38, 68, 0.50);
+    /* Fondo oscuro semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el cuerpo del modal */
+.modal-body {
+    width: 40%;
+    height: 25%;
+    flex-shrink: 0;
+    background: #F3CDFE;
+    display: block;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Estilos para el título del modal */
+.modal-body h3 {
+    color:#132644;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el campo de entrada del modal */
+.modal-body input {
+    width: 70%;
+    height: 2vh;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: $fuente-secundaria;
+    font-size: 19px;
+}
+
+/* Estilos para los botones del modal */
+/* Estilos para los botones del modal */
+.modal-body button {
+    background: #132644;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family: $fuente-button;
+    font-size: 20px;
+    cursor: pointer;
+    display: block; /* Cambiamos a bloque para que estén uno debajo del otro */
+    margin: 10px auto; /* Centramos los botones horizontalmente */
+}
+
+/* Estilos para el botón de cierre del modal */
+.modal-body .close-button {
+    position: absolute;
+    top: 10px; /* Ajusta según tu preferencia */
+    right: 70px; /* Ajusta según tu preferencia */
+}
+// Estilos para el botón de guardado del modal
+.modal-body .save-button {
+    width: 206px;
+    margin-right: 10px;
+   
+} 

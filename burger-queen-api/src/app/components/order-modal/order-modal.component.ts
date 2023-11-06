@@ -5,7 +5,7 @@ import { SwitchService } from 'src/app/services/switch.service';
 @Component({
   selector: 'app-order-modal',
   templateUrl: './order-modal.component.html',
-  styleUrls: ['./order-modal.component.css']
+  styleUrls: ['./order-modal.component.scss']
 })
 export class OrderModalComponent {
   clientName:string= '';

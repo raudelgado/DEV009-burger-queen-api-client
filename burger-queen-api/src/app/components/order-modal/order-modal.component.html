@@ -1,8 +1,9 @@
 <div class="modal">
     <div class="modal-body">
+        <button (click)="closeModal()">X</button>
         <h3>Customer's name</h3>
         <input type="text" name="clientName" id="clientName" [(ngModel)]="clientName">
         <button (click)="saveClientName()">Save it!</button>
-        <button (click)="closeModal()">X</button>
+
     </div>
 </div>
