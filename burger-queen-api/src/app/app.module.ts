@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { OrderModalComponent } from './components/order-modal/order-modal.compon
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,7 @@ import { OrderModalComponent } from './components/order-modal/order-modal.compon
     MenuComponent,
     OrderViewComponent,
     OrderComponent,
-    OrderModalComponent
+    OrderModalComponent,
   ],
   imports: [
     BrowserModule,

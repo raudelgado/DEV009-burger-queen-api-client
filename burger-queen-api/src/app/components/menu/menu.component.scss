@@ -1,0 +1,34 @@
+// Definición de variables:
+$color-primario: #132644;
+$color-secundario: #E0FE68;
+$color-fondo: #EDE6DC;
+$fuente-principal: 'Nunito Sans', sans-serif;
+$fuente-secundaria: 'AntipastoPro_trial', sans-serif;
+$fuente-button: 'AntipastoPro-DemiBold_trial', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+.buttonsOption{ 
+    display: flex;
+    flex-direction: column;
+    float: inline-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.buttonsOption button {
+    background: #132644;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family: $fuente-secundaria;
+    font-size: 28px;
+    cursor: pointer;
+    display: block; /* Cambiamos a bloque para que estén uno debajo del otro */
+    margin: 10px auto; 
+}

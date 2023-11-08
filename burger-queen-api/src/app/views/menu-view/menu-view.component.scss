@@ -1,71 +1,61 @@
-@font-face {
-    font-family: "AntipastoPro_trial.ttf";
-    src: url("../../../assets/fonts/AntipastoPro_trial.ttf") format("truetype");
-}
-@font-face {
-    font-family: "AntipastoPro-DemiBold_trial.ttf";
-    src: url("../../../assets/fonts/AntipastoPro-DemiBold_trial.ttf") format("truetype");
-}
-@font-face {
-    font-family: "AntipastoPro-Extralight_trial.ttf";
-    src: url("../../../assets/fonts/AntipastoPro-Extralight_trial.ttf") format("truetype");
-}
+// Definición de variables:
+$color-primario: #132644;
+$color-secundario: #E0FE68;
+$color-fondo: #EDE6DC;
+$fuente-principal: 'Nunito Sans', sans-serif;
+$fuente-secundaria:'AntipastoPro_trial', sans-serif;
 
-body {
-    background-color: #ede6dc;
-    padding: 2%;
-}
 
-.header {
-    background: #132644;
-    border-radius: 40px;
-    width: 1295px;
+
+
+body{
+  background: $color-fondo; /* Color de fondo para el cuerpo */
+  display: flex;
+  flex-direction: column;
+  padding: 2.5%;
+
+// Estilos para el encabezado
+header {
+    background-color: $color-primario;
+    border-radius: 20px;
+    width: 100%;
     height: 96px;
     display: flex;
-
-    .logo {
-        width: auto;
+    align-items: center; /* Alinea verticalmente el contenido */
+  
+    // Estilos para la clase .barra dentro del encabezado
+    .header {
+      border-radius: 40px;
+      color: white;
+      flex: 1; /* Distribuye el espacio disponible */
+      display: flex;
+      align-items: center; /* Alinea verticalmente el contenido */
+  
+      // Estilos para imágenes dentro de la clase .barra
+      img {
+        width: 5vh;
         padding: 1%;
-        margin-right: 25%;
-        margin-left: 2%;
-        flex-shrink: 1;
-    }
-    h1 {
+        flex-shrink: 0; /* Evita que la imagen se reduzca */
+      }
+  
+      h1 {
         color: white;
-        text-align: center;
-        font-family: "AntipastoPro_trial.ttf", sans-serif;
-        font-size: 48px;
+        font-family: $fuente-secundaria;
+        font-size: 34px;
         text-transform: capitalize;
         font-weight: 400;
+        margin: 0; /* Elimina el margen predeterminado */
+        margin-left: 31% ;
+        text-align: center; /* Alinea horizontalmente el texto */
+      }
+      .log-out {
+        width: 4vh;
+        margin-left: 31%;
+      }
     }
-}
+  }
 
-.buttonsOption {
-    background: red;
-    width: 25%;
-    height: 17%;
-    display: flex;
-    flex-direction: column;
+  main {
     justify-content: center;
-    font-family: "AntipastoPro_trial.ttf";
-    font-size: 18px;
-    font-weight: 300;
-
-    .buttonBreakfast {
-        color: white;
-        background: #132644;
-        width: 270px;
-        height: 64px;
-        margin-left: 3%;
-        flex-shrink: 0;
-    }
-
-    .buttonLate {
-        color: white;
-        background: #132644;
-        width: 270px;
-        height: 64px;
-        padding: 3%;
-        flex-shrink: 0;
-    }
+  }
 }

@@ -1,9 +1,10 @@
 <section class="login-container">
-    <article>
+    <article> 
+      <div class="header-container">
       <img class="logo" src="../../../assets/bqblanco.png" alt="logo">
       <h1>Welcome</h1>
       <h3>Please, enter with your<br>own credentials</h3>
-  
+      </div>  
       <form #loginForm="ngForm" (ngSubmit)="login()">
         <div class="form-group">
           <input type="email" class="email" name="email" [(ngModel)]="user.email" required placeholder="Email">
@@ -20,7 +21,7 @@
         </div>
   
         <div class="form-group">
-          <button type="submit" [disabled]="loginForm.invalid">Login</button>
+          <button type="submit" class="login" [disabled]="loginForm.invalid">Login</button>
         </div>
   
         <!-- Mostrar mensaje de error si existe -->
